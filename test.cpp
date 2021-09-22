@@ -36,12 +36,12 @@ namespace test
 		}
 		TEST_METHOD(seed4) {
 			Triangle T(49, 50, 101);
-			Assert::IsTrue(T.getResult() == Result::Isosceles);
+			Assert::IsTrue(T.getResult() == Result::Error);
 
 		}
 		TEST_METHOD(seed5) {
 			Triangle T(50, 50, 101);
-			Assert::IsTrue(T.getResult() == Result::Equilateral);
+			Assert::IsTrue(T.getResult() == Result::Error);
 
 		}
 	};

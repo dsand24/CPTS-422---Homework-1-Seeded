@@ -20,27 +20,27 @@ namespace test
 	public:
 
 		TEST_METHOD(seed1) {
-			Triangle T(100, 100, 100);
+			Triangle T(101, 101, 101);
 			Assert::IsTrue(T.getResult() == Result::Equilateral);
 
 		}
 		TEST_METHOD(seed2) {
-			Triangle T(100, 100, 50);
+			Triangle T(101, 101, 50);
 			Assert::IsTrue(T.getResult() == Result::Isosceles);
 
 		}
 		TEST_METHOD(seed3) {
-			Triangle T(100, 50, 100);
+			Triangle T(101, 50, 101);
 			Assert::IsTrue(T.getResult() == Result::Isosceles);
 
 		}
 		TEST_METHOD(seed4) {
-			Triangle T(49, 50, 100);
+			Triangle T(49, 50, 101);
 			Assert::IsTrue(T.getResult() == Result::Isosceles);
 
 		}
 		TEST_METHOD(seed5) {
-			Triangle T(50, 50, 100);
+			Triangle T(50, 50, 101);
 			Assert::IsTrue(T.getResult() == Result::Equilateral);
 
 		}
